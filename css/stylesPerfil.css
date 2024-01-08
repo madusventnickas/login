@@ -1,0 +1,68 @@
+/* stylesPerfil.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile-header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cover-photo,
+  .profile-photo {
+    cursor: pointer;
+  }
+  
+  .cover-photo {
+    height: 150px; /* Ajuste conforme necessário */
+    background-color: #ddd; /* Cor de fundo da capa de perfil */
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo {
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px; /* Ajuste conforme necessário */
+    border-radius: 50%;
+    background-color: #bbb; /* Cor de fundo da foto de perfil */
+    margin: -75px auto 20px;
+  }
+  
+  .bio {
+    margin-bottom: 20px;
+  }
+  
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .photo-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  
+/* Adicione esta classe para posicionar o botão de voltar para home no canto esquerdo superior */
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  /* Esconda o botão de adicionar foto de perfil inicialmente */
+  #addProfileButton {
+    display: none;
+  }
+  
+  /* Exiba o botão de adicionar foto de perfil após a adição da foto */
+  #profilePhoto.has-photo #addProfileButton {
+    display: inline-block;
+  }

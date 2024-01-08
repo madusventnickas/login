@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Minha Rede Social</title>
+  <link rel="stylesheet" href="css/stylesLogin.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Minha Rede Social</h1>
+    
+    <div class="social-icons">
+      <img src="icons/facebook-icon.png" alt="Facebook">
+      <img src="icons/twitter-icon.png" alt="Twitter">
+      <img src="icons/instagram-icon.png" alt="Instagram">
+    </div>
+    
+    <div id="error-message" class="error-message"></div>
+    
+    <form>
+      <input type="text" placeholder="Nome de usuário" id="username">
+      <input type="password" placeholder="Senha" id="password">
+      
+      <button type="button" onclick="handleLogin()">Login</button>
+    </form>
+    
+    <div class="extra-links">
+      <a href="#" onclick="handleForgotPassword()">Esqueci minha senha</a>
+      <span>ou</span>
+      <a href="Criar.html">Criar uma conta</a>
+    </div>
+    
+    <!-- Modal para recuperação de senha -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p>Instruções para recuperação de senha...</p>
+        <button class="close-button" onclick="handleModalClose()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scriptLogin.js"></script>
+</body>
+</html>
+
+

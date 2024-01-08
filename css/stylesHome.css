@@ -1,0 +1,86 @@
+/* stylesHome.css */
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.searchBar input {
+  flex: 1;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.searchBar button {
+  background-color: #ccc;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.feedItem {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedItem img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.interactionButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likeButton {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out; /* Adicionando transição para a cor do texto */
+}
+
+/* Adicione esta classe para o coração preenchido */
+.likeButton.clicked {
+  color: red;
+}
+
+.likeCount{
+  margin-left: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.footerButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerButtons button {
+  width: 30%; /* Ajuste a porcentagem conforme necessário */
+  padding: 10px;
+  font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
+}

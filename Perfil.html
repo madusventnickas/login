@@ -1,0 +1,40 @@
+<!-- profile.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Perfil</title>
+  <link rel="stylesheet" href="css/stylesPerfil.css">
+</head>
+<body>
+  <div class="profile-header">
+    <button onclick="goHome()" class="back-button">Voltar para Home</button>
+
+    <label for="coverInput">
+      <div class="cover-photo" id="coverPhoto" onclick="changeCoverPhoto()"></div>
+      <input type="file" id="coverInput" style="display: none" accept="image/*" onchange="handleCoverUpload()">
+    </label>
+    
+    <label for="profileInput">
+      <div class="profile-photo" id="profilePhoto" onclick="changeProfilePhoto()"></div>
+      <input type="file" id="profileInput" style="display: none" accept="image/*" onchange="handleProfileUpload()">
+      <button id="addProfileButton" onclick="showProfileInput()">+</button>
+    </label>
+
+    <div class="bio">
+      <h2>Nome do Usuário</h2>
+      <p>Descrição breve sobre mim...</p>
+    </div>
+  </div>
+
+  <div class="photo-gallery" id="photoGallery">
+    <!-- Aqui serão exibidas as fotos postadas -->
+    <!-- Adicione mais elementos conforme necessário -->
+  </div>
+
+  <script src="js/scriptPerfil.js"></script>
+</body>
+</html>
+
